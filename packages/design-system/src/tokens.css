@@ -1,0 +1,78 @@
+/* ============================================================
+   Tabla — Design tokens (source de vérité des 3 surfaces)
+   Extraits des prototypes hifi (tabla.css / styles.css).
+   Trois thèmes : clair (défaut), sombre, contraste élevé
+   (le contraste se combine avec clair ET sombre).
+   Pilotage par attributs sur la racine :
+     data-theme="light" | "dark"
+     data-contrast="high"
+   ============================================================ */
+
+:root {
+  /* Couleurs — mode clair */
+  --ivory: #faf7f2;
+  --cream: #f1ece3;
+  --cream-deep: #ebe4d5;
+  --white: #ffffff;
+  --ink: #1c1a17;
+  --ink-soft: #5a554d;
+  --ink-mute: #8b847a;
+  --terracotta: #8b3a2f;
+  --olive: #4a6741;
+  --gold: #b08d57;
+  --amber: #c68a1f;
+  --border: #d6d0c2;
+  --border-soft: #e8e2d6;
+
+  /* Ombres — quasi imperceptibles, jamais sur les boutons */
+  --shadow-soft: 0 1px 0 rgba(28, 26, 23, 0.04);
+  --shadow-card: 0 1px 2px rgba(28, 26, 23, 0.04);
+  --shadow-modal: 0 24px 48px rgba(28, 26, 23, 0.12);
+
+  /* Mouvement */
+  --ease-tabla: cubic-bezier(0.32, 0.72, 0.16, 1);
+  --dur-press: 180ms;
+  --dur-state: 240ms;
+  --dur-sheet: 340ms;
+
+  /* Typographie */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --ivory: #1c1a17;
+  --cream: #232118;
+  --cream-deep: #2a271c;
+  --white: #221f18;
+  --ink: #faf7f2;
+  --ink-soft: #c9c2b5;
+  --ink-mute: #8b847a;
+  --border: #38342b;
+  --border-soft: #2e2a22;
+}
+
+[data-contrast="high"] {
+  --ivory: #ffffff;
+  --cream: #f2efe9;
+  --ink: #000000;
+  --ink-soft: #1a1815;
+  --ink-mute: #3a352e;
+  --terracotta: #7a2a20;
+  --olive: #2f4a28;
+  --gold: #7a5a28;
+  --border: #1c1a17;
+}
+
+[data-contrast="high"][data-theme="dark"] {
+  --ivory: #000000;
+  --cream: #161412;
+  --ink: #ffffff;
+  --ink-soft: #f0ece3;
+  --ink-mute: #c9c2b5;
+  --terracotta: #e89a8c;
+  --olive: #a8c99e;
+  --gold: #e0be84;
+  --border: #faf7f2;
+}

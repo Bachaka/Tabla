@@ -1,0 +1,81 @@
+# Pipeline Azure DevOps — build + déploiement des 3 fronts sur leurs Static Web Apps.
+#
+# À créer dans Azure DevOps : Pipelines → New pipeline → Existing YAML file →
+# /pipelines/fronts.yml
+#
+# PRÉREQUIS (une fois) : ajouter 3 variables SECRÈTES au pipeline (Edit →
+# Variables, cocher "Keep this value secret"), avec le "deployment token" de
+# chaque Static Web App (portail → la SWA → Manage deployment token) :
+#     SWA_TOKEN_CONVIVE, SWA_TOKEN_ADMIN, SWA_TOKEN_RESTAURANT
+#
+# VITE_API_URL est publique (URL de l'API) → définie ci-dessous, injectée au build.
+
+# CI : tout commit sur main touchant un front ou un package partagé (à n'importe
+# quelle profondeur) déclenche ce build+déploiement. Préfixe de dossier = récursif.
+trigger:
+  branches:
+    include: [main]
+  paths:
+    include:
+      - apps/convive
+      - apps/admin
+      - apps/restaurant
+      - packages
+      - pipelines/fronts.yml
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  VITE_API_URL: "https://app-tabla-dev-crb8cedmgpedddeh.francecentral-01.azurewebsites.net"
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "22.x"
+    displayName: "Node 22"
+
+  - script: |
+      corepack enable
+      corepack prepare pnpm@9.15.0 --activate
+      pnpm install
+    displayName: "Installer le workspace (pnpm)"
+
+  # ── Tests frontend (BLOQUENT builds + déploiements s'ils échouent) ────
+  # Vitest tourne en jsdom, sans réseau (fetch simulé). Une étape en échec
+  # arrête le pipeline → aucun front n'est buildé ni déployé.
+  - script: pnpm --filter @tabla/convive test
+    displayName: "Tests frontend Convive (Vitest)"
+
+  # Build des 3 fronts (VITE_API_URL injectée → URL absolue de l'API dans le bundle).
+  - script: pnpm --filter @tabla/convive build
+    displayName: "Build convive"
+    env: { VITE_API_URL: $(VITE_API_URL) }
+  - script: pnpm --filter @tabla/admin build
+    displayName: "Build admin"
+    env: { VITE_API_URL: $(VITE_API_URL) }
+  - script: pnpm --filter @tabla/restaurant build
+    displayName: "Build restaurant"
+    env: { VITE_API_URL: $(VITE_API_URL) }
+
+  # Déploiement de chaque dist déjà buildé (skip_app_build = on n'utilise pas Oryx).
+  - task: AzureStaticWebApp@0
+    displayName: "Déployer convive → white-meadow"
+    inputs:
+      app_location: "apps/convive/dist"
+      skip_app_build: true
+      azure_static_web_apps_api_token: $(SWA_TOKEN_CONVIVE)
+
+  - task: AzureStaticWebApp@0
+    displayName: "Déployer admin → blue-smoke"
+    inputs:
+      app_location: "apps/admin/dist"
+      skip_app_build: true
+      azure_static_web_apps_api_token: $(SWA_TOKEN_ADMIN)
+
+  - task: AzureStaticWebApp@0
+    displayName: "Déployer restaurant → kind-wave"
+    inputs:
+      app_location: "apps/restaurant/dist"
+      skip_app_build: true
+      azure_static_web_apps_api_token: $(SWA_TOKEN_RESTAURANT)

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@tabla/design-system/tokens.css";
+@import "@tabla/design-system/theme.css";
+/* Design du prototype back-office (tokens + classes .app/.sidebar/.card/.kpi…).
+   Importé en dernier : ses tokens priment pour le Restaurateur. */
+@import "./proto.css";

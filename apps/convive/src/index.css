@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@tabla/design-system/tokens.css";
+@import "@tabla/design-system/theme.css";
+/* Design du prototype Convive (tokens + classes .tabla/.dish-row/.tabbar/
+   .page-header…). Importé en dernier : ses tokens priment. */
+@import "./proto.css";
+
+html,
+body {
+  background: var(--ivory);
+}

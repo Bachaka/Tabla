@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@tabla/design-system/tokens.css";
+@import "@tabla/design-system/theme.css";
+/* Design du prototype Admin (tokens sombres raffinés + classes sidebar, card,
+   kpi, data-table, pill…). Importé en dernier : ses tokens priment pour l'Admin. */
+@import "./proto.css";

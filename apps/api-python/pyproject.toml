@@ -1,0 +1,53 @@
+# pyproject.toml — le manifeste d'un projet Python moderne (équivalent du
+# package.json de Node). C'est `uv` qui le lit pour créer l'environnement
+# virtuel (.venv) et installer les dépendances.
+#
+# Un "environnement virtuel" = un dossier isolé qui contient SA version de
+# Python et SES bibliothèques, propre à ce projet. Ça évite que les paquets
+# d'un projet polluent un autre. Node fait pareil avec node_modules ;
+# en Python c'est le .venv.
+
+[project]
+name = "tabla-api"
+version = "0.1.0"
+description = "API Tabla — backend FastAPI (surface Convive)"
+requires-python = ">=3.12"
+
+# Dépendances de production. `uv add <paquet>` les ajoute ici automatiquement.
+dependencies = [
+    "argon2-cffi>=25.1.0",
+    # FastAPI = le framework web. Il route les requêtes HTTP vers tes
+    # fonctions Python et génère une doc interactive tout seul.
+    "fastapi>=0.115",
+    # Uvicorn = le "serveur" qui écoute réellement sur un port TCP et parle
+    # le protocole ASGI à FastAPI (voir main.py pour l'explication d'ASGI).
+    # [standard] ajoute des extras utiles (rechargement à chaud, websockets…).
+    "psycopg[binary]>=3.3.4",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.13.0",
+    "sqlmodel>=0.0.39",
+    "uvicorn[standard]>=0.34",
+]
+
+# Dépendances utiles seulement pendant le développement (pas en production).
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+# Configuration de pytest.
+#   pythonpath = ["."]      : rend `app` ET `tests` importables (import tests.fakes).
+#   testpaths  = ["tests"]  : où chercher les tests.
+#   import-mode=importlib   : autorise deux fichiers de même nom (unit/ et integration/
+#                             ont chacun test_menu.py) sans collision d'import.
+#   addopts -m "not integration" : par DÉFAUT on ne lance QUE les tests unitaires
+#                             (rapides, sans base). Les tests d'intégration se
+#                             lancent explicitement : `uv run pytest -m integration`.
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib -m 'not integration'"
+markers = [
+    "integration: nécessite la base Azure de dev (exclu par défaut)",
+]

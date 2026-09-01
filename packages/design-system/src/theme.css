@@ -1,0 +1,36 @@
+/* ============================================================
+   Tabla — Thème Tailwind v4
+   Mappe les tokens CSS vers les utilitaires Tailwind.
+   Usage dans une app :
+     @import "tailwindcss";
+     @import "@tabla/design-system/tokens.css";
+     @import "@tabla/design-system/theme.css";
+   Les couleurs référencent les variables (pas de valeur en dur)
+   pour que dark / high-contrast fonctionnent par bascule d'attribut.
+   ============================================================ */
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-paper: var(--white);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-mute: var(--ink-mute);
+  --color-terracotta: var(--terracotta);
+  --color-olive: var(--olive);
+  --color-gold: var(--gold);
+  --color-amber: var(--amber);
+  --color-line: var(--border);
+  --color-line-soft: var(--border-soft);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --ease-tabla: var(--ease-tabla);
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-modal: var(--shadow-modal);
+}

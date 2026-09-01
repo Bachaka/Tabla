@@ -1,0 +1,1071 @@
+{
+  "restaurants": [
+    {
+      "id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "slug": "maison-salice",
+      "nom": "Maison Salice",
+      "ville": "Saint-Rémy-de-Provence",
+      "langues": [
+        "fr",
+        "en"
+      ],
+      "latitude": 43.7885782,
+      "longitude": 4.8317498
+    }
+  ],
+  "zones": [
+    {
+      "id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "nom": "Salle"
+    },
+    {
+      "id": "bb6a0f57-1f18-4808-aa98-eda816509895",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "nom": "Terrasse"
+    }
+  ],
+  "tables": [
+    {
+      "id": "1e1f12a9-030b-4c5d-b04d-ad2d6d92bf0f",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "01"
+    },
+    {
+      "id": "0a893582-b453-4e01-83be-b2ee83398137",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "02"
+    },
+    {
+      "id": "a05346bb-e12a-4016-b251-7b2071ed1bb5",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "03"
+    },
+    {
+      "id": "dac01541-cc1c-4a4a-ac13-0346f6d4fb11",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "04"
+    },
+    {
+      "id": "267dfbc2-2dc1-4818-a7f2-d7219a3579e6",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "05"
+    },
+    {
+      "id": "a39f10de-a927-4fa6-9123-929986fc4ff9",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "06"
+    },
+    {
+      "id": "de8ec259-5345-4b6b-85d1-331697720c84",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "07"
+    },
+    {
+      "id": "c93dbde4-fbe9-4f5d-8917-8369aa9234f6",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "5ac0a24b-d17b-4ca6-94f9-ff71488f0d7b",
+      "libelle": "08"
+    },
+    {
+      "id": "f6ccf01b-a533-48d1-ae49-aaeef7ed394b",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "bb6a0f57-1f18-4808-aa98-eda816509895",
+      "libelle": "09"
+    },
+    {
+      "id": "34ab2fb5-b17d-4ba6-906d-d3d1e123c0c7",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "bb6a0f57-1f18-4808-aa98-eda816509895",
+      "libelle": "10"
+    },
+    {
+      "id": "623f4804-5663-442d-8038-003532d9beb5",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "bb6a0f57-1f18-4808-aa98-eda816509895",
+      "libelle": "11"
+    },
+    {
+      "id": "3d812334-fb97-4e8c-a9a0-94b45540e2de",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "zone_id": "bb6a0f57-1f18-4808-aa98-eda816509895",
+      "libelle": "12"
+    }
+  ],
+  "producteurs": [
+    {
+      "id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "lea",
+      "village": "Eygalières",
+      "km": 10,
+      "role": {
+        "fr": "Maraîchère"
+      },
+      "labels": [
+        "Bio",
+        "Demeter"
+      ],
+      "prenom": "Léa",
+      "atelier": "Le Jardin de Léa",
+      "cap": 110,
+      "url_portrait": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80&auto=format&fit=crop",
+      "url_atelier": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80&auto=format&fit=crop",
+      "histoire": {
+        "fr": "Léa a repris la ferme de sa grand-mère il y a sept ans. Trois hectares en biodynamie, semis paysans, et une serre en bois qu'elle a montée à la main. Elle livre chaque mardi et vendredi, à l'aube, dans un vieux Berlingo qui sent le basilic."
+      },
+      "saison": [
+        "Tomates anciennes",
+        "Courgettes",
+        "Basilic",
+        "Aubergines",
+        "Fenouil"
+      ],
+      "latitude": 43.7613682,
+      "longitude": 4.9493545
+    },
+    {
+      "id": "5ff5a9b8-77f7-48dc-8eac-c0a64c0f1393",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "jean",
+      "village": "Bédoin",
+      "km": 47,
+      "role": {
+        "fr": "Affineur"
+      },
+      "labels": [
+        "AOP",
+        "Lait cru"
+      ],
+      "prenom": "Jean",
+      "atelier": "Fromagerie du Mont Ventoux",
+      "cap": 25,
+      "url_portrait": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=400&q=80&auto=format&fit=crop",
+      "url_atelier": "https://images.unsplash.com/photo-1452195100486-9cc805987862?w=900&q=80&auto=format&fit=crop",
+      "histoire": {
+        "fr": "Jean affine des chèvres depuis trente-deux ans dans une cave creusée à flanc de Ventoux. Il refuse de pasteuriser, refuse de standardiser, et garde un troupeau de cinquante bêtes — pas une de plus."
+      },
+      "saison": [
+        "Chèvre frais",
+        "Tomme demi-sèche",
+        "Brousse",
+        "Cendré trois mois"
+      ],
+      "latitude": 44.1240383,
+      "longitude": 5.1806559
+    },
+    {
+      "id": "15c76fba-ec7f-48d9-b5d5-fc6d98e49cf9",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "marius",
+      "village": "Maussane-les-Alpilles",
+      "km": 8,
+      "role": {
+        "fr": "Vigneron"
+      },
+      "labels": [
+        "Bio",
+        "Biodynamie"
+      ],
+      "prenom": "Marius",
+      "atelier": "Domaine des Trois Pierres",
+      "cap": 210,
+      "url_portrait": "https://images.unsplash.com/photo-1507081323647-4d250478b919?w=400&q=80&auto=format&fit=crop",
+      "url_atelier": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=900&q=80&auto=format&fit=crop",
+      "histoire": {
+        "fr": "Marius est la troisième génération sur cinq hectares de Grenache et Cinsault. Vendanges manuelles, élevage en amphore, étiquettes dessinées par sa fille. Le vin est servi à la température de la cave."
+      },
+      "saison": [
+        "Rosé de saignée 2024",
+        "Rouge en amphore 2022",
+        "Blanc de Roussanne 2023"
+      ],
+      "latitude": 43.7210449,
+      "longitude": 4.8055115
+    },
+    {
+      "id": "00c54dd7-24f9-4020-940e-8b5ca546861b",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "fatima",
+      "village": "Mollégès",
+      "km": 10,
+      "role": {
+        "fr": "Boulangère"
+      },
+      "labels": [
+        "Levain naturel"
+      ],
+      "prenom": "Fatima",
+      "atelier": "Le Fournil de la Plaine",
+      "cap": 65,
+      "url_portrait": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80&auto=format&fit=crop",
+      "url_atelier": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&q=80&auto=format&fit=crop",
+      "histoire": {
+        "fr": "Fatima cuit au feu de bois trois fois par semaine. Farines paysannes de petit épeautre, fermentation longue de trente heures. Son pain arrive encore chaud à dix-neuf heures, enveloppé dans du linge."
+      },
+      "saison": [
+        "Petit épeautre",
+        "Seigle",
+        "Sarrasin",
+        "Levain dur"
+      ],
+      "latitude": 43.8059139,
+      "longitude": 4.9487152
+    }
+  ],
+  "plats": [
+    {
+      "id": "c7042242-084a-49e4-9053-a0f19e06dcad",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "tomates",
+      "signature": true,
+      "service": null,
+      "categorie": "Entrées",
+      "prix": "18.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Tomates anciennes & burrata"
+      },
+      "resume": {
+        "fr": "Quatre variétés du Jardin de Léa, burrata des Pouilles, basilic des serres."
+      },
+      "description": {
+        "fr": "Un plat qui ne ment pas. Quatre tomates cueillies le matin même chez Léa — Noire de Crimée, Ananas, Cornue des Andes, Green Zebra — posées sur une burrata laiteuse, encore tiède. Une huile d'olive de notre voisin, fleur de sel de Camargue, basilic frais déchiré à la main."
+      },
+      "regimes": [
+        "vegetarien",
+        "sansGluten"
+      ],
+      "allergenes": [
+        "Lactose"
+      ]
+    },
+    {
+      "id": "fc76028a-8fdb-420e-9955-d1725cf3c8d1",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "courgette",
+      "signature": false,
+      "service": null,
+      "categorie": "Entrées",
+      "prix": "16.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1599021456807-25db0f974333?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Fleurs de courgette farcies"
+      },
+      "resume": {
+        "fr": "Brousse fraîche de Jean, citron de Menton, miel de romarin."
+      },
+      "description": {
+        "fr": "Les fleurs cueillies à l'aube avant qu'elles ne se ferment. Une farce légère à la brousse de chèvre de Jean, zeste de citron de Menton, un voile de miel de romarin. Frites une minute, servies sans attendre."
+      },
+      "regimes": [
+        "vegetarien"
+      ],
+      "allergenes": [
+        "Gluten",
+        "Lactose"
+      ]
+    },
+    {
+      "id": "b9b14f65-aed5-448a-8736-9bb6d150eb27",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "carpaccio",
+      "signature": false,
+      "service": "midi",
+      "categorie": "Entrées",
+      "prix": "14.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Carpaccio de betterave"
+      },
+      "resume": {
+        "fr": "Trois betteraves rôties au sel, noisettes torréfiées, huile de cameline."
+      },
+      "description": {
+        "fr": "Betteraves Chioggia, jaune, et rouge de Détroit, rôties trois heures dans une croûte de sel. Tranchées fines, noisettes du Piémont torréfiées, huile de cameline pressée à froid. Une vinaigrette au vinaigre de framboise vieilli."
+      },
+      "regimes": [
+        "vegan",
+        "sansGluten"
+      ],
+      "allergenes": [
+        "Fruits à coque"
+      ]
+    },
+    {
+      "id": "e891c6e3-199e-4f62-bb82-18d1aec75627",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "agneau",
+      "signature": true,
+      "service": "soir",
+      "categorie": "Plats",
+      "prix": "32.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Épaule d'agneau, sept heures"
+      },
+      "resume": {
+        "fr": "Agneau des Alpilles confit, jus court au thym, écrasée de pommes de terre."
+      },
+      "description": {
+        "fr": "Épaule entière d'agneau de lait des Alpilles, confite sept heures dans son propre jus. Thym frais, ail rose de Lautrec, un trait de vin de Marius. Servie avec une écrasée de Charlotte à l'huile d'olive verte."
+      },
+      "regimes": [
+        "sansGluten"
+      ],
+      "allergenes": []
+    },
+    {
+      "id": "607f51e3-7e65-4f46-acb0-0344bcfff1f5",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "loup",
+      "signature": false,
+      "service": "soir",
+      "categorie": "Plats",
+      "prix": "36.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Loup de ligne, fenouil braisé"
+      },
+      "resume": {
+        "fr": "Pêché à la palangre la veille, fenouil de Léa braisé au pastis."
+      },
+      "description": {
+        "fr": "Loup entier de Méditerranée, pêché à la palangre par Olivier au large de Carry-le-Rouet. Cuit sur la peau, fenouil braisé au pastis, une mousseline de pomme de terre à l'huile d'olive nouvelle."
+      },
+      "regimes": [
+        "sansGluten"
+      ],
+      "allergenes": [
+        "Poisson"
+      ]
+    },
+    {
+      "id": "5a39b178-9c67-4e90-b2bb-078c9a6f7452",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "risotto",
+      "signature": false,
+      "service": "midi",
+      "categorie": "Plats",
+      "prix": "24.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Risotto aux herbes folles"
+      },
+      "resume": {
+        "fr": "Carnaroli, bouillon de cosses, herbes du potager."
+      },
+      "description": {
+        "fr": "Riz Carnaroli mantecato avec un bouillon de cosses de petits pois — rien ne se perd. Cerfeuil, estragon, livèche, oseille et fleurs comestibles cueillies le matin. Un copeau de tomme de Jean râpé à table."
+      },
+      "regimes": [
+        "vegetarien",
+        "sansGluten"
+      ],
+      "allergenes": [
+        "Lactose"
+      ]
+    },
+    {
+      "id": "ffa2a304-5891-4147-b02e-65228c1b5909",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "ratatouille",
+      "signature": false,
+      "service": null,
+      "categorie": "Plats",
+      "prix": "22.00",
+      "disponible": false,
+      "url_photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Ratatouille confite, œuf parfait"
+      },
+      "resume": {
+        "fr": "Légumes de Léa cuits séparément, œuf à 63°."
+      },
+      "description": {
+        "fr": "Chaque légume cuit à part — aubergine, courgette, poivron, tomate — puis assemblé tiède. Un œuf bio cuit à basse température posé dessus, un trait d'huile d'olive nouvelle, du basilic."
+      },
+      "regimes": [
+        "vegetarien",
+        "sansGluten"
+      ],
+      "allergenes": [
+        "Œufs"
+      ]
+    },
+    {
+      "id": "aca2f890-6072-49e5-8f7b-9d125ff5ee80",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "tarte",
+      "signature": true,
+      "service": null,
+      "categorie": "Desserts",
+      "prix": "12.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Tarte fine aux abricots"
+      },
+      "resume": {
+        "fr": "Abricots Bergeron, pâte de Fatima, glace au romarin."
+      },
+      "description": {
+        "fr": "Une pâte feuilletée inversée pétrie par Fatima, abricots Bergeron rôtis au sucre vergeoise, glace au romarin frais infusé une nuit. Sortie du four à la commande."
+      },
+      "regimes": [
+        "vegetarien"
+      ],
+      "allergenes": [
+        "Gluten",
+        "Lactose",
+        "Œufs"
+      ]
+    },
+    {
+      "id": "260e2174-8e86-47bd-90d5-c4de156afb26",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "fromages",
+      "signature": false,
+      "service": null,
+      "categorie": "Desserts",
+      "prix": "14.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Trois chèvres de Jean"
+      },
+      "resume": {
+        "fr": "Frais, demi-sec, affiné trois mois. Pain de Fatima."
+      },
+      "description": {
+        "fr": "Une dégustation de trois âges du même chèvre : frais du jour, demi-sec à dix jours, et affiné cendré à trois mois. Servi avec un pain de petit épeautre de Fatima, et un miel de lavande de Sault."
+      },
+      "regimes": [
+        "vegetarien"
+      ],
+      "allergenes": [
+        "Lactose",
+        "Gluten"
+      ]
+    },
+    {
+      "id": "b0c3bb72-cf47-4b27-ac41-ce85b02e69ba",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "vin-rouge",
+      "signature": false,
+      "service": null,
+      "categorie": "Vins",
+      "prix": "9.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Domaine des Trois Pierres, 2022"
+      },
+      "resume": {
+        "fr": "Grenache, Cinsault. Élevage en amphore. Servi à 16°."
+      },
+      "description": {
+        "fr": "L'assemblage signature de Marius. Grenache vieilles vignes, Cinsault d'argile rouge, élevé six mois en amphore de grès. Notes de cerise noire, garrigue, poivre blanc. Servi frais."
+      },
+      "regimes": [
+        "vegan"
+      ],
+      "allergenes": [
+        "Sulfites"
+      ]
+    },
+    {
+      "id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "vin-rose",
+      "signature": false,
+      "service": null,
+      "categorie": "Vins",
+      "prix": "8.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Rosé de saignée, 2024"
+      },
+      "resume": {
+        "fr": "Grenache pressé à froid. Pêche de vigne, groseille. Servi à 10°."
+      },
+      "description": {
+        "fr": "Le rosé de Marius, obtenu par saignée des cuves de rouge. Robe pétale, nez de pêche de vigne et de groseille, une finale saline qui appelle l'apéritif. Vendange de nuit pour garder la fraîcheur."
+      },
+      "regimes": [
+        "vegan"
+      ],
+      "allergenes": [
+        "Sulfites"
+      ]
+    },
+    {
+      "id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "code": "vin-blanc",
+      "signature": false,
+      "service": null,
+      "categorie": "Vins",
+      "prix": "9.00",
+      "disponible": true,
+      "url_photo": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=900&q=80&auto=format&fit=crop",
+      "nom": {
+        "fr": "Blanc de Roussanne, 2023"
+      },
+      "resume": {
+        "fr": "Roussanne, Clairette. Élevage sur lies. Servi à 11°."
+      },
+      "description": {
+        "fr": "Un blanc de soif et de gastronomie à la fois. Roussanne et Clairette élevées sur lies fines, notes d'amande fraîche, fleur d'aubépine et zeste de citron. La cuvée que Marius garde pour le poisson."
+      },
+      "regimes": [
+        "vegan"
+      ],
+      "allergenes": [
+        "Sulfites"
+      ]
+    }
+  ],
+  "composition_plats": [
+    {
+      "id": 1,
+      "position": 0,
+      "plat_id": "c7042242-084a-49e4-9053-a0f19e06dcad",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Tomates anciennes"
+      }
+    },
+    {
+      "id": 2,
+      "position": 1,
+      "plat_id": "c7042242-084a-49e4-9053-a0f19e06dcad",
+      "producteur_id": null,
+      "libelle": {
+        "fr": "Burrata di bufala"
+      }
+    },
+    {
+      "id": 3,
+      "position": 2,
+      "plat_id": "c7042242-084a-49e4-9053-a0f19e06dcad",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Basilic genovese"
+      }
+    },
+    {
+      "id": 4,
+      "position": 0,
+      "plat_id": "fc76028a-8fdb-420e-9955-d1725cf3c8d1",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Fleurs de courgette"
+      }
+    },
+    {
+      "id": 5,
+      "position": 1,
+      "plat_id": "fc76028a-8fdb-420e-9955-d1725cf3c8d1",
+      "producteur_id": "5ff5a9b8-77f7-48dc-8eac-c0a64c0f1393",
+      "libelle": {
+        "fr": "Brousse de chèvre"
+      }
+    },
+    {
+      "id": 6,
+      "position": 0,
+      "plat_id": "b9b14f65-aed5-448a-8736-9bb6d150eb27",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Betteraves anciennes"
+      }
+    },
+    {
+      "id": 7,
+      "position": 0,
+      "plat_id": "e891c6e3-199e-4f62-bb82-18d1aec75627",
+      "producteur_id": null,
+      "libelle": {
+        "fr": "Agneau des Alpilles"
+      }
+    },
+    {
+      "id": 8,
+      "position": 1,
+      "plat_id": "e891c6e3-199e-4f62-bb82-18d1aec75627",
+      "producteur_id": "15c76fba-ec7f-48d9-b5d5-fc6d98e49cf9",
+      "libelle": {
+        "fr": "Vin rouge de cuisson"
+      }
+    },
+    {
+      "id": 9,
+      "position": 0,
+      "plat_id": "607f51e3-7e65-4f46-acb0-0344bcfff1f5",
+      "producteur_id": null,
+      "libelle": {
+        "fr": "Loup de ligne"
+      }
+    },
+    {
+      "id": 10,
+      "position": 1,
+      "plat_id": "607f51e3-7e65-4f46-acb0-0344bcfff1f5",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Fenouil bronze"
+      }
+    },
+    {
+      "id": 11,
+      "position": 0,
+      "plat_id": "5a39b178-9c67-4e90-b2bb-078c9a6f7452",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Petits pois & cosses"
+      }
+    },
+    {
+      "id": 12,
+      "position": 1,
+      "plat_id": "5a39b178-9c67-4e90-b2bb-078c9a6f7452",
+      "producteur_id": "5ff5a9b8-77f7-48dc-8eac-c0a64c0f1393",
+      "libelle": {
+        "fr": "Tomme de chèvre"
+      }
+    },
+    {
+      "id": 13,
+      "position": 0,
+      "plat_id": "ffa2a304-5891-4147-b02e-65228c1b5909",
+      "producteur_id": "36fef622-07de-4fb2-8859-0d276ac33069",
+      "libelle": {
+        "fr": "Légumes du soleil"
+      }
+    },
+    {
+      "id": 14,
+      "position": 0,
+      "plat_id": "aca2f890-6072-49e5-8f7b-9d125ff5ee80",
+      "producteur_id": "00c54dd7-24f9-4020-940e-8b5ca546861b",
+      "libelle": {
+        "fr": "Pâte feuilletée"
+      }
+    },
+    {
+      "id": 15,
+      "position": 1,
+      "plat_id": "aca2f890-6072-49e5-8f7b-9d125ff5ee80",
+      "producteur_id": null,
+      "libelle": {
+        "fr": "Abricots Bergeron"
+      }
+    },
+    {
+      "id": 16,
+      "position": 0,
+      "plat_id": "260e2174-8e86-47bd-90d5-c4de156afb26",
+      "producteur_id": "5ff5a9b8-77f7-48dc-8eac-c0a64c0f1393",
+      "libelle": {
+        "fr": "Chèvres affinés"
+      }
+    },
+    {
+      "id": 17,
+      "position": 1,
+      "plat_id": "260e2174-8e86-47bd-90d5-c4de156afb26",
+      "producteur_id": "00c54dd7-24f9-4020-940e-8b5ca546861b",
+      "libelle": {
+        "fr": "Pain de petit épeautre"
+      }
+    },
+    {
+      "id": 18,
+      "position": 0,
+      "plat_id": "b0c3bb72-cf47-4b27-ac41-ce85b02e69ba",
+      "producteur_id": "15c76fba-ec7f-48d9-b5d5-fc6d98e49cf9",
+      "libelle": {
+        "fr": "Verre 12cl"
+      }
+    },
+    {
+      "id": 19,
+      "position": 0,
+      "plat_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68",
+      "producteur_id": "15c76fba-ec7f-48d9-b5d5-fc6d98e49cf9",
+      "libelle": {
+        "fr": "Verre 12cl"
+      }
+    },
+    {
+      "id": 20,
+      "position": 0,
+      "plat_id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d",
+      "producteur_id": "15c76fba-ec7f-48d9-b5d5-fc6d98e49cf9",
+      "libelle": {
+        "fr": "Verre 12cl"
+      }
+    }
+  ],
+  "details_vins": [
+    {
+      "plat_id": "b0c3bb72-cf47-4b27-ac41-ce85b02e69ba",
+      "humeur": "viande",
+      "couleur": "rouge",
+      "cepages": [
+        "Grenache",
+        "Cinsault"
+      ]
+    },
+    {
+      "plat_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68",
+      "humeur": "salin",
+      "couleur": "rosé",
+      "cepages": [
+        "Grenache"
+      ]
+    },
+    {
+      "plat_id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d",
+      "humeur": "poisson",
+      "couleur": "blanc",
+      "cepages": [
+        "Roussanne",
+        "Clairette"
+      ]
+    }
+  ],
+  "accords": [
+    {
+      "note": {
+        "fr": "La salinité du rosé répond à la tomate, sans jamais couvrir la burrata."
+      },
+      "plat_id": "c7042242-084a-49e4-9053-a0f19e06dcad",
+      "plat_vin_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68"
+    },
+    {
+      "note": {
+        "fr": "Le citron du blanc prolonge celui de la farce — un accord d'évidence."
+      },
+      "plat_id": "fc76028a-8fdb-420e-9955-d1725cf3c8d1",
+      "plat_vin_id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d"
+    },
+    {
+      "note": {
+        "fr": "La fraîcheur du rosé équilibre la terre de la betterave."
+      },
+      "plat_id": "b9b14f65-aed5-448a-8736-9bb6d150eb27",
+      "plat_vin_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68"
+    },
+    {
+      "note": {
+        "fr": "Le rouge en amphore et la garrigue de l'agneau parlent la même langue."
+      },
+      "plat_id": "e891c6e3-199e-4f62-bb82-18d1aec75627",
+      "plat_vin_id": "b0c3bb72-cf47-4b27-ac41-ce85b02e69ba"
+    },
+    {
+      "note": {
+        "fr": "La cuvée que Marius garde justement pour le poisson de ligne."
+      },
+      "plat_id": "607f51e3-7e65-4f46-acb0-0344bcfff1f5",
+      "plat_vin_id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d"
+    },
+    {
+      "note": {
+        "fr": "Les lies fines du blanc épousent le crémeux du risotto."
+      },
+      "plat_id": "5a39b178-9c67-4e90-b2bb-078c9a6f7452",
+      "plat_vin_id": "ddc1fa80-94dd-4c51-a6d0-d90ef247289d"
+    },
+    {
+      "note": {
+        "fr": "Un rosé de soif pour les légumes confits du soleil."
+      },
+      "plat_id": "ffa2a304-5891-4147-b02e-65228c1b5909",
+      "plat_vin_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68"
+    },
+    {
+      "note": {
+        "fr": "La pêche du rosé fait écho à l'abricot rôti."
+      },
+      "plat_id": "aca2f890-6072-49e5-8f7b-9d125ff5ee80",
+      "plat_vin_id": "0c75146e-5a8b-4804-a4fd-f56bbd7a7c68"
+    }
+  ],
+  "menus_degustation": [
+    {
+      "id": "263d21ac-5dac-4505-a375-de0354a0cc0e",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "intro": {
+        "fr": "Quatre services, un seul fil : ce que les producteurs ont apporté ce matin. Camille compose au retour du marché, l'écriture change chaque semaine."
+      },
+      "prix": "68.00",
+      "prix_accord": "32.00",
+      "nom": {
+        "fr": "Le Menu de la Cheffe"
+      },
+      "services": [
+        {
+          "num": "I",
+          "line": {
+            "fr": "Les tomates de Léa, cueillies tièdes, et la burrata."
+          },
+          "role": {
+            "fr": "Pour s'asseoir"
+          },
+          "dishCode": "tomates"
+        },
+        {
+          "num": "II",
+          "line": {
+            "fr": "Loup de ligne et fenouil braisé au pastis."
+          },
+          "role": {
+            "fr": "La mer, de près"
+          },
+          "dishCode": "loup"
+        },
+        {
+          "num": "III",
+          "line": {
+            "fr": "Épaule d'agneau des Alpilles, sept heures de patience."
+          },
+          "role": {
+            "fr": "Le cœur du repas"
+          },
+          "dishCode": "agneau"
+        },
+        {
+          "num": "IV",
+          "line": {
+            "fr": "Tarte fine aux abricots, glace au romarin."
+          },
+          "role": {
+            "fr": "Pour finir doux"
+          },
+          "dishCode": "tarte"
+        }
+      ]
+    }
+  ],
+  "blocs_contenu": [
+    {
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "cle": "cellar",
+      "contenu": {
+        "intro": {
+          "fr": "Toute notre cave tient en un nom. Marius cultive cinq hectares à onze kilomètres d'ici — nous versons son vin et lui seul. Trois cuvées, élevées en amphore, servies à la température de sa cave."
+        },
+        "moods": [
+          {
+            "id": "salin",
+            "line": {
+              "fr": "Pour commencer, ou avec les légumes du soleil."
+            },
+            "label": {
+              "fr": "Léger & salin"
+            }
+          },
+          {
+            "id": "poisson",
+            "line": {
+              "fr": "Tendu, sur lies, une finale d'agrumes."
+            },
+            "label": {
+              "fr": "Pour le poisson"
+            }
+          },
+          {
+            "id": "viande",
+            "line": {
+              "fr": "Ample, garrigue et poivre, servi frais."
+            },
+            "label": {
+              "fr": "Pour la viande"
+            }
+          }
+        ],
+        "vigneronCode": "marius"
+      }
+    },
+    {
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "cle": "suggestions",
+      "contenu": [
+        {
+          "reason": {
+            "fr": "Le plus apprécié ce mois"
+          },
+          "dishCode": "tomates"
+        },
+        {
+          "reason": {
+            "fr": "Signature de la maison"
+          },
+          "dishCode": "agneau"
+        },
+        {
+          "reason": {
+            "fr": "Idéal par cette soirée tiède"
+          },
+          "dishCode": "loup"
+        },
+        {
+          "reason": {
+            "fr": "Sortie du four à la commande"
+          },
+          "dishCode": "tarte"
+        }
+      ]
+    }
+  ],
+  "puces": [
+    {
+      "id": "55fb0775-9506-4dd7-abff-8d0767c6673a",
+      "uid": "04:A3:10:B2:C1:5D:60",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "1e1f12a9-030b-4c5d-b04d-ad2d6d92bf0f",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "3c6aea91-d3f4-48f5-9532-377c44099364",
+      "uid": "04:A3:11:B2:C1:5D:61",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "0a893582-b453-4e01-83be-b2ee83398137",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "2190e9c4-e3e5-4a71-9e96-ce5270326335",
+      "uid": "04:A3:12:B2:C1:5D:62",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "a05346bb-e12a-4016-b251-7b2071ed1bb5",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "cfd17902-c7f1-4924-af89-a19a475335ad",
+      "uid": "04:A3:13:B2:C1:5D:63",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "dac01541-cc1c-4a4a-ac13-0346f6d4fb11",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "157140ac-3829-4402-87d1-f74067cff8ff",
+      "uid": "04:A3:14:B2:C1:5D:64",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "267dfbc2-2dc1-4818-a7f2-d7219a3579e6",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "acc5a896-5d67-4a65-8c7a-a09e0e4e6b7b",
+      "uid": "04:A3:15:B2:C1:5D:65",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "a39f10de-a927-4fa6-9123-929986fc4ff9",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "b83b38a1-7db6-49f8-a726-fe1e149e6a07",
+      "uid": "04:A3:16:B2:C1:5D:66",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "de8ec259-5345-4b6b-85d1-331697720c84",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "231883e4-62c2-4e37-b204-19147a0d2006",
+      "uid": "04:A3:17:B2:C1:5D:67",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "c93dbde4-fbe9-4f5d-8917-8369aa9234f6",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "aea38971-49bc-43a2-8fa1-286e104a5f9b",
+      "uid": "04:A3:18:B2:C1:5D:68",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "f6ccf01b-a533-48d1-ae49-aaeef7ed394b",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "74e56bb2-46ab-4b41-af0b-79ec08e0d836",
+      "uid": "04:A3:19:B2:C1:5D:69",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "34ab2fb5-b17d-4ba6-906d-d3d1e123c0c7",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "e8f3e4ab-bdaa-4859-8559-8bf08d1af9e5",
+      "uid": "04:A3:20:B2:C1:5D:70",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "623f4804-5663-442d-8038-003532d9beb5",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    },
+    {
+      "id": "fcfa6c63-3ce5-40ca-b8d8-07eb59728b24",
+      "uid": "04:A3:21:B2:C1:5D:71",
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "table_id": "3d812334-fb97-4e8c-a9a0-94b45540e2de",
+      "statut": "appairee",
+      "cible": {
+        "kind": "menu"
+      }
+    }
+  ],
+  "restaurant_crm": [
+    {
+      "restaurant_id": "43408626-f0ae-46e3-b908-5ea1a8930b5d",
+      "mrr": 890,
+      "notes": null,
+      "forfait": "Pro",
+      "score_sante": 82,
+      "statut_facturation": "active",
+      "note": 4.7
+    }
+  ]
+}

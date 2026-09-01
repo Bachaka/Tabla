@@ -1,0 +1,69 @@
+# Pipeline Azure DevOps — déploiement de l'API FastAPI sur l'App Service.
+#
+# À créer dans Azure DevOps : Pipelines → New pipeline → Azure Repos Git →
+# Existing YAML file → /pipelines/api.yml
+#
+# PRÉREQUIS (une fois) :
+#   • Une "service connection" Azure Resource Manager (Project settings →
+#     Service connections). Reporter son nom dans AZURE_SERVICE_CONNECTION.
+#   • Vérifier API_APP_NAME = le NOM exact de la ressource App Service
+#     (portail → App Service → Overview, en haut). Probablement "app-tabla-dev".
+#   • Dans l'App Service → Configuration → Application settings, ajouter :
+#       AZURE_PG_HOST / _PORT / _USER / _PASSWORD / _DATABASE / _SSL
+#       JWT_SECRET, APP_PG_USER=tabla_app, APP_PG_PASSWORD=<...>
+#       ALLOWED_ORIGINS=https://white-meadow-0e51e0103.7.azurestaticapps.net,https://blue-smoke-03e0d7703.7.azurestaticapps.net,https://kind-wave-03421c203.7.azurestaticapps.net
+#       SCM_DO_BUILD_DURING_DEPLOYMENT=true   (Oryx installe requirements.txt)
+#     Startup Command : python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+# CI : tout commit sur main touchant l'API (à n'importe quelle profondeur)
+# déclenche automatiquement ce déploiement. Préfixe de dossier = match récursif.
+trigger:
+  branches:
+    include: [main]
+  paths:
+    include:
+      - apps/api-python
+      - pipelines/api.yml
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  AZURE_SERVICE_CONNECTION: "sc-tabla-dev"  # nom de ta service connection
+  API_APP_NAME: "app-tabla-dev"             # <-- VÉRIFIER : nom EXACT de l'App Service (portail → Overview)
+
+steps:
+  # ── Tests unitaires (BLOQUENT le déploiement s'ils échouent) ──────────
+  # `uv run pytest` ne lance que les tests unitaires (les tests d'intégration
+  # sont exclus par défaut, cf. pyproject : addopts -m "not integration").
+  # Ils tournent SANS base : l'agent CI n'a pas les secrets Azure, et n'en a
+  # pas besoin. Une étape en échec arrête le pipeline → pas de déploiement.
+  - task: UsePythonVersion@0
+    displayName: "Python 3.12"
+    inputs:
+      versionSpec: "3.12"
+
+  - script: |
+      python -m pip install --upgrade uv
+      uv run pytest
+    displayName: "Tests unitaires API (uv run pytest)"
+    workingDirectory: "$(System.DefaultWorkingDirectory)/apps/api-python"
+    # `settings` (pydantic) est validé à l'import et exige host/user/password/JWT.
+    # Les tests unitaires NE se connectent PAS à la base (moteur paresseux) : on
+    # fournit donc des valeurs BIDON, non secrètes, juste pour satisfaire l'import.
+    env:
+      AZURE_PG_HOST: "localhost"
+      AZURE_PG_USER: "ci"
+      AZURE_PG_PASSWORD: "ci"
+      JWT_SECRET: "ci-secret-non-utilise-pour-de-vrai"
+
+  # ── Déploiement (atteint uniquement si les tests sont verts) ──────────
+  - task: AzureWebApp@1
+    displayName: "Déployer l'API sur l'App Service"
+    inputs:
+      azureSubscription: $(AZURE_SERVICE_CONNECTION)
+      appType: webAppLinux
+      appName: $(API_APP_NAME)
+      package: "$(System.DefaultWorkingDirectory)/apps/api-python"
+      runtimeStack: "PYTHON|3.12"
+      startUpCommand: "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"

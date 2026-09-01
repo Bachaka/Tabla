@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fond plein (pleine surface = compatible icône "maskable") -->
+  <rect width="512" height="512" fill="#1c1a17"/>
+  <!-- Assiette : anneaux concentriques, vus de dessus -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#b08d57" stroke-width="10"/>
+  <circle cx="256" cy="256" r="96" fill="none" stroke="#8b3a2f" stroke-width="6"/>
+  <!-- Point central (dressage) -->
+  <circle cx="256" cy="256" r="14" fill="#b08d57"/>
+  <!-- Monogramme discret : un "T" en serif stylisé -->
+  <g fill="#faf7f2">
+    <rect x="216" y="214" width="80" height="12" rx="2"/>
+    <rect x="250" y="214" width="12" height="76" rx="2"/>
+  </g>
+</svg>
